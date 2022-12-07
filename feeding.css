@@ -1,0 +1,118 @@
+/*-----------Base Items-------------*/
+.body {
+	height:100%;
+	background-color: black;
+	color:white;
+}
+
+.header { 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.submit { 
+	margin-left: auto;
+}
+
+.backArrow {
+    filter: brightness(0) invert(1);
+    width: 92px;
+    height: 65px;
+}
+
+/*---Fonts---*/
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(./assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+  
+h1, h2, h3, h4, p, input {
+    font-family: playfairDisplay;
+}
+
+/*----------Feeding Stats Bar------------*/
+.statsBar {
+    background-color: #3B3838;
+    width: 90%;
+    height: 165px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    height: 100px;
+    width: 200px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.blue {
+    background-color: #18F0DB; 
+}
+
+.pink {
+    background-color: #F117B8;
+}
+
+.gray {
+    background-color:#3B3838;
+}
+
+.statInput {
+    text-align-last: center;
+    width: 300px;
+}
+
+/*---------Timer Circles-------*/
+.timerCircle {
+    background-color: #3B3838;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.feedingTimerSection {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.playPause {
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.timer {
+    font-size: 60px;
+}
+
+/*-------Total Eaten-------*/
+.totalEaten {
+    float:right;
+}
+
+.totalEatenText {
+    padding-top: 25px;
+}
+
+/*-----Hyperlink-----*/
+a { 
+	color: inherit;
+	transition: transform .2s;
+}
+
+a:hover {
+    color:white; 
+    text-decoration:none; 
+    cursor:pointer;  
+	transform: scale(1.05);
+}

@@ -1,0 +1,82 @@
+/*--------Base Items--------*/
+.body {
+	height:100%;
+	background-color: black;
+	color:white;
+}
+
+/* .header { 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+/*---Fonts---*/
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(./assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+  
+h1, h2, h3, h4, p, input {
+    font-family: playfairDisplay;
+}
+
+/*-------Buttons--------*/
+.feedingButton { 
+	background-color: #18F0DB;
+}
+
+.diaperButton { 
+	background-color: #F117B8;
+}
+
+.button { 
+	height: 10rem;
+    width: 20rem;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+	border-radius: 5px;
+}
+
+/*-------Main Section--------*/
+.main {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+}
+
+.info { 
+	display: flex;
+}
+
+.feedingTime { 
+	margin-right: 5.5rem;
+}
+
+.diaperTime { 
+	margin-right: 7rem;
+}
+
+/*-----Hyperlink-----*/
+a { 
+	color: inherit;
+	transition: transform .2s;
+}
+
+a:hover {
+    color:white; 
+    text-decoration:none; 
+    cursor:pointer;  
+	transform: scale(1.05);
+}
+
+/*-----Everything outside of header----*/
+.outer {
+    margin-top: 14rem;
+}
+
+/*-------Header--------*/
+.logo { 
+	margin-left: auto;
+}

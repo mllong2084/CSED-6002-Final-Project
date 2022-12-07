@@ -1,0 +1,226 @@
+/*------Base Items-------*/
+.body {
+	height:100%;
+	background-color: black;
+	color:white;
+}
+
+.header { 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.submit { 
+	margin-left: auto;
+    color:rgb(255, 255, 255)
+}
+
+.backArrow {
+    filter: brightness(0) invert(1);
+    width: 92px;
+    height: 65px;
+}
+
+/*---Fonts---*/
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(./assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+  
+h1, h2, h3, h4, p, input {
+    font-family: playfairDisplay;
+}
+
+/*----------Diaper Stats Bar------------*/
+.statsBar {
+    background-color: #3B3838;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.input {
+    height: 50px;
+    width: 170px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.blue {
+    background-color: #18F0DB; 
+}
+
+.pink {
+    background-color: #F117B8;
+}
+
+.gray {
+    background-color:#3B3838;
+}
+
+.statInput {
+    text-align-last: center;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+/*---Body Midsection of Page---*/
+/*outsideBox = the whole section under header*/
+.outsideBox {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/*********insideBox = the pee, poo, and diaper rash 
+section inside of the outsideBox******************/
+.insideBox {
+    margin-top: 25px;
+    width: 100%;
+    display:flex;
+    margin-left: 100px;
+}
+
+.line {
+    border-width: 5px;
+    border-color: white;
+    border-right-style: solid;
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*********Pee Poo Text on left of line**********/
+.peePooText {
+    margin-left: 25%;
+    margin-top: 60px;
+}
+
+.peeText, .pooText {
+    margin-bottom: 60px;
+}
+
+/********All Icons*********/
+.icons {
+    margin-top: 60px;
+    display: grid;
+}
+
+/******Grouping of Pee Images******/
+.peeGroup {
+    display: inline-flex;
+}
+
+.onePee, .twoPee, .threePee {
+    margin-right: 55px;
+}
+
+.pee {
+    width: 48px;
+    aspect-ratio: inherit;
+    margin-right: -21px;
+}
+
+/* .onePee {
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+} */
+
+/******Grouping of Poo Images******/
+.pooGroup {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.onePoo, .twoPoo, .threePoo {
+    margin-right: 40px;
+}
+
+.poo {
+    width: 45px;
+    aspect-ratio: inherit;
+    margin-right: -10px;
+}
+
+/*****Diaper Rash Button****/
+.diaperRashGroup {
+    display: inline-table;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.diaperIcon {
+    height: 50px; 
+  width: 50px;
+  margin-top: -10px;
+}
+
+.diaperText {
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/****Rounded Switch******/
+ /* Checkbox checked effect */
+ .checkbox:checked + .toggle::after {
+    left : 20px;
+}
+       
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: #F117B8;
+}
+       
+/* Checkbox vanished */
+.checkbox {
+    display : none;
+}
+
+/* toggle in label designing */
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 50px;
+    height : 30px;
+    background-color: #18F0DB;
+    border-radius: 30px;
+    border: 2px solid gray;
+    margin: auto;
+}
+       
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: gray;
+    top: .5px;
+    left: 0px;
+    transition:  all 0.5s;
+}
+
+/*-----Hyperlink-----*/
+a { 
+	color: inherit;
+	transition: transform .2s;
+}
+
+a:hover {
+    color:white; 
+    text-decoration:none; 
+    cursor:pointer;  
+	transform: scale(1.05);
+}
